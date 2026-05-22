@@ -1,30 +1,59 @@
-#  Lab 1 Startup Builder
+# Lab 1 — OpenClaw / Open WebUI AI Workspace Lab
 
+## Objective
 
----
+In this lab, we will:
 
-##  Phase 1: Context & Tool Explanation (Before Opening the Tool)
-**Time Allocation:**  
-**Format:** Talk to the students / Write on the board.
-
-### 1. What is OpenClaw?
-* **Explain to Students:** "Before we write a single prompt, let's look at our workspace. We are using **OpenClaw**. OpenClaw is an enterprise-grade AI Assistant interface. It bypasses restrictive consumer-level guardrails and allows us to chat directly with powerful underlying LLM models using advanced system personas."
-* **Key Concept:** Explain that a standard AI interaction is "one-shot" (asking a single question and accepting a generic answer). OpenClaw allows us to run **Iterative Prompting Chains**, where we force the AI to maintain a professional persona and build an architecture step-by-step.
-
-### 2. Live Environment Setup Check
-* Point the students to the classroom projector. 
-* Show them that you are opening the OpenClaw workspace environment via the browser/local environment designated for the boot camp.
-* **Instructor Note:** *Ensure your OpenClaw session is logged in and clear before sharing your screen.*
+- Deploy Open WebUI using Docker
+- Access the AI workspace from browser
+- Connect OpenAI API
+- Select AI models
+- Upload PDF documents
+- Ask contextual questions from uploaded documents
 
 ---
 
-##  Phase 2: Live Demo Execution (Step-by-Step)
-**Time Allocation:** 
-**Format:** Copy-paste the prompts below into your live OpenClaw screen. Explain your actions as you type.
+## What is Open WebUI?
 
-###  Step 1: Prime the System Engine
-* **What to tell the students:** "Watch the screen. If I ask the AI to 'give me a business plan', it will give me a boring, generic list. Instead, I am going to run a **System Priming Prompt** to completely overwrite its default behavior and force it to act like a strict Venture Capitalist."
-* **Your Live Action:** Copy the text below and hit send in OpenClaw.
+Open WebUI is a self-hosted AI workspace platform that allows users to interact with multiple AI models using a single interface.
 
-```text
-Act as an elite Venture Capitalist and Startup Incubator Director. I am going to build a brand new technology startup from scratch using an iterative prompting framework. Do not generate the whole plan at once. First, acknowledge your role and ask me what broad industry or problem domain I want to target today (e.g., EdTech, Sustainability, FinTech, Autonomous Systems, Logistics).
+It provides:
+
+- AI chat interface
+- Document upload
+- Multi-model support
+- AI workflow orchestration
+- Contextual question answering
+
+---
+
+## Architecture Overview
+
+Browser
+↓
+Open WebUI (EC2 Docker Container)
+↓
+OpenAI API
+↓
+GPT Model Response
+
+---
+
+## Prerequisites
+
+- Ubuntu VM / EC2 / Azure VM
+- Docker installed
+- OpenAI API key
+- Internet access
+
+---
+
+## Lab Outcome
+
+By the end of this lab, students will:
+
+- Understand AI workspace architecture
+- Deploy Open WebUI
+- Connect OpenAI models
+- Upload and query documents
+- Interact with AI assistants
