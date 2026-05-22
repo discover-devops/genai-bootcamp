@@ -1,33 +1,30 @@
-# Lab 1: Building an AI Startup From Scratch
+#  Lab 1 Startup Builder
 
-## Objective
-The goal of this lab is to pivot away from generic, one-shot AI interactions and master **Iterative Prompting Chains**. Working within your teams, you will act as technology founders and product managers, utilizing **OpenClaw** to systematically design a structural, investment-ready startup blueprint from a raw industry sector.
 
 ---
 
-##  High-Intensity Timeline (45 Minutes)
-* **00:00 - 00:05 (5 Mins):** Step 1: Workspace Initialization & Domain Choice
-* **00:05 - 00:15 (10 Mins):** Step 2: Problem Isolation & Target Audience Definitions
-* **00:15 - 00:25 (10 Mins):** Step 3: Core Feature Architecture & Monetization Engine
-* **00:25 - 00:35 (10 Mins):** Step 4: Branding Framework & Minimalist Viral Taglines
-* **00:35 - 00:45 (10 Mins):** Step 5: Compilation of Master Blueprint & Meta-Prompt Extraction
+##  Phase 1: Context & Tool Explanation (Before Opening the Tool)
+**Time Allocation:**  
+**Format:** Talk to the students / Write on the board.
+
+### 1. What is OpenClaw?
+* **Explain to Students:** "Before we write a single prompt, let's look at our workspace. We are using **OpenClaw**. OpenClaw is an enterprise-grade AI Assistant interface. It bypasses restrictive consumer-level guardrails and allows us to chat directly with powerful underlying LLM models using advanced system personas."
+* **Key Concept:** Explain that a standard AI interaction is "one-shot" (asking a single question and accepting a generic answer). OpenClaw allows us to run **Iterative Prompting Chains**, where we force the AI to maintain a professional persona and build an architecture step-by-step.
+
+### 2. Live Environment Setup Check
+* Point the students to the classroom projector. 
+* Show them that you are opening the OpenClaw workspace environment via the browser/local environment designated for the boot camp.
+* **Instructor Note:** *Ensure your OpenClaw session is logged in and clear before sharing your screen.*
 
 ---
 
-##  Lab Operational Constraints
-1. **No Mobile Devices:** All physical mobile phones must remain submitted at the instructor's desk.
-2. **Workstation Execution Only:** No unmanaged personal laptops are allowed during the sprint.
-3. **Anti-One-Shot Enforcement:** Do not enter prompts like *"Write me a business plan for an EdTech app"*. If your chat history shows a single-shot generation instead of an incremental conversation, your submission will be disqualified.
+##  Phase 2: Live Demo Execution (Step-by-Step)
+**Time Allocation:** 
+**Format:** Copy-paste the prompts below into your live OpenClaw screen. Explain your actions as you type.
 
----
+###  Step 1: Prime the System Engine
+* **What to tell the students:** "Watch the screen. If I ask the AI to 'give me a business plan', it will give me a boring, generic list. Instead, I am going to run a **System Priming Prompt** to completely overwrite its default behavior and force it to act like a strict Venture Capitalist."
+* **Your Live Action:** Copy the text below and hit send in OpenClaw.
 
-##  Tooling Directives
-* **Primary Workspace:** OpenClaw (Conversational AI Assistant Platform)
-* **Validation Engine:** Google NotebookLM (Use this parallel tab to check if market competitors already occupy your space or to calculate market validation points).
-
----
-
-##  Submission Deliverables
-At the end of the 45 minutes, your team must create a markdown file named `SUBMISSION.md` inside this directory containing:
-1. The finalized **Startup Blueprint Document** (formatted in clean Markdown).
-2. The extracted **Master Optimized Prompt** (The single prompt capable of regenerating your entire business model in one run).
+```text
+Act as an elite Venture Capitalist and Startup Incubator Director. I am going to build a brand new technology startup from scratch using an iterative prompting framework. Do not generate the whole plan at once. First, acknowledge your role and ask me what broad industry or problem domain I want to target today (e.g., EdTech, Sustainability, FinTech, Autonomous Systems, Logistics).
